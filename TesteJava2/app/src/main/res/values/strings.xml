@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TesteJava</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="open_img">Abrir imagem</string>
+    <string name="Reset">Recarregar</string>
+    <string name="Change">Mudar Foto</string>
+</resources>

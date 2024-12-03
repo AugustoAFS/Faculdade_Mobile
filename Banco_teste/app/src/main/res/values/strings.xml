@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Banco_teste</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="criar_conta">Criar conta</string>
+    <string name="visualizar_senha">Visualizar senha</string>
+    <string name="password_input">Campo para digitar a senha</string>
+    <string name="enter">Entrar</string>
 </resources>

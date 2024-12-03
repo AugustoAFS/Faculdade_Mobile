@@ -11,53 +11,67 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/digite_sua_senha"  <!-- Usando string de recursos -->
-    android:textColor="@color/black"
-    android:textSize="16sp"
-    app:layout_constraintBottom_toTopOf="@+id/Password"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintVertical_bias="0.2" />
+        android:text="@string/digite_sua_senha"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:labelFor="@id/Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
 
     <EditText
         android:id="@+id/Password"
-        android:layout_width="0dp"
+        android:layout_width="200dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:hint="@string/digite_sua_senha"  <!-- Usando string de recursos -->
-    android:inputType="numberPassword"
-    android:textColor="@color/black"
-    android:autofillHints="password"  <!-- Habilitando autofill -->
-    android:contentDescription="@string/password_input"  <!-- Adicionando descrição -->
-    app:layout_constraintBottom_toTopOf="@+id/button"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintHorizontal_bias="0.5"
-    app:layout_constraintVertical_bias="0.3" />
-
-    <Button
-        android:id="@+id/btnCriarConta"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:backgroundTint="@color/black"
-        android:text="@string/criar_conta"  <!-- Usando string de recursos -->
-    android:textColor="@color/white"
-    app:layout_constraintTop_toBottomOf="@+id/ViewPassword"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintVertical_bias="0.1" />
+        android:autofillHints="password"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ViewPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
 
     <CheckBox
         android:id="@+id/ViewPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/visualizar_senha"
-    android:textColor="@color/black"
-    app:layout_constraintTop_toBottomOf="@+id/Password"
-    app:layout_constraintBottom_toTopOf="@+id/button"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintHorizontal_bias="0.5" />
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/btnCriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/criar_conta"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879" />
+
+    <Button
+        android:id="@+id/Enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

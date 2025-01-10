@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Cantina - R$</string>
+    <string name="Cantina_ifpr">Cantina IFPR - R$</string>
+    <string name="coxinha">coxinha - R$</string>
+    <string name="dogao">Dogão - R$</string>
+    <string name="Hamburger">Hanburgon - R$</string>
+    <string name="Pao_de_queijo">Pão de Queijo - R$</string>
+    <string name="esfirra">Esfiarra - R$</string>
+    <string name="Coca_cola">Coca Cola - R$</string>
+    <string name="Todinho">Todinho - R$</string>
+    <string name="Cafe">Café - R$</string>
+    <string name="Cini">Cini - R$</string>
+    <string name="Total">Total: R$</string>
+</resources>

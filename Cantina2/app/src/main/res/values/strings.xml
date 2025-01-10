@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Cantina</string>
+    <string name="Cantina_ifpr">Cantina IFPR</string>
+    <string name="coxinha">coxinha - R$6,70</string>
+    <string name="dogao">Dogão - R$6,45</string>
+    <string name="Hamburger">Hanburgon - R$6,50</string>
+    <string name="Pao_de_queijo">Pão de Queijo - R$1,15</string>
+    <string name="esfirra">Esfiarra - R$6,25</string>
+    <string name="Coca_cola">Coca Cola - R$5,00</string>
+    <string name="Todinho">Todinho - R$4,00</string>
+    <string name="Cafe">Café - R$3,00</string>
+    <string name="Cini">Cini - R$2,50</string>
+    <string name="Total">Total: R$</string>
+</resources>

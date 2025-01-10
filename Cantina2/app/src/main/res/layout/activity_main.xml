@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cantina_ifpr"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Checkboxes -->
+    <CheckBox
+        android:id="@+id/CbCini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cini"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/CbCoxinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coxinha"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/CbCini"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/CbDogao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dogao"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/CbCoxinha"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/CbCoca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Coca_cola"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/CbDogao"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/CbPaoQueijo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Pao_de_queijo"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/CbCoca"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/CbCafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cafe"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/CbPaoQueijo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/CbHamburgon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Hamburger"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/CbCafe"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/CbTodinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Todinho"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/CbHamburgon"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/CbEsfirra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/esfirra"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/CbTodinho"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Total"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/CbEsfirra"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- EditText's -->
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="236dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber4" />
+
+    <EditText
+        android:id="@+id/editTextNumber6"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber5" />
+
+    <EditText
+        android:id="@+id/editTextNumber7"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber6" />
+
+    <EditText
+        android:id="@+id/editTextNumber8"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber7" />
+
+    <EditText
+        android:id="@+id/editTextNumber9"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
